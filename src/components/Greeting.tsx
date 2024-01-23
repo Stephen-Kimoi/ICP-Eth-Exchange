@@ -1,10 +1,11 @@
 import React, { useState } from "react"
 import { useActorMethod } from "service/hello"
+import { hello } from "declarations/hello"
 
 interface GreetingProps {}
 
 const Greeting: React.FC<GreetingProps> = ({}) => {
-  const { call, data, error, loading } = useActorMethod("greet")
+  const { call, data, error, loading } = useActorMethod("deposit_principal") 
 
   const [name, setName] = useState("")
 
@@ -12,6 +13,8 @@ const Greeting: React.FC<GreetingProps> = ({}) => {
     const newName = e.target.value
     setName(newName)
   }
+
+  console.log("Hello us: ", hello); 
 
   return (
     <div>

@@ -27,7 +27,7 @@
     "generate": "dfx generate"
   },
   "dependencies": {
-    "@dfinity/agent": "^0.20.1",
+    "@dfinity/agent": "^0.19.3",
     "@dfinity/auth-client": "^0.20.1",
     "@dfinity/candid": "^0.20.1",
     "@dfinity/identity": "^0.20.1",
