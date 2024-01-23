@@ -35,7 +35,9 @@
     "@re-actor/core": "^0.2.5",
     "next": "^14.0",
     "react": "^18.2",
-    "react-dom": "^18.2"
+    "react-dom": "^18.2",
+    "viem": "^2.5.0",
+    "wagmi": "^2.5.0"
   },
   "devDependencies": {
     "@types/node": "20.9.4",
