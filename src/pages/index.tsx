@@ -5,7 +5,7 @@ import styles from "styles/Home.module.css"
 import Greeting from "components/Greeting"
 import Image from "next/image"
 
-import Wallet from '../components/wallet' 
+import { Wallet } from '../components/wallet' 
 import { config } from "service/config" 
 import { WagmiProvider } from "wagmi"
 
@@ -16,10 +16,10 @@ function HomePage() {
         <title>Internet Computer</title>
       </Head>
       <main className={styles.main}>
-        <h3 className={styles.title}>
+      {/* <h3 className={styles.title}>
           Welcome to the Internet Computer starter template
-        </h3>
-        {/* <Greeting /> */} 
+        </h3> */}
+        {/* <Greeting />  */}
         <WagmiProvider config={config}>
           <Wallet /> 
         </WagmiProvider>

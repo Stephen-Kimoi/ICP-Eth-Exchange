@@ -3,7 +3,7 @@ import { injected } from "wagmi/connectors"
 
 interface WalletProps {} 
 
-const Wallet: React.FC<WalletProps> = ({}) => {
+export const Wallet: React.FC<WalletProps> = ({}) => {
    const { address } = useAccount() 
 
    const { connect } = useConnect()
